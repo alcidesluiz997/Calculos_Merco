@@ -1,0 +1,123 @@
+:root {
+    --fundo-principal: rgb(68, 68, 68);
+    --text: #ffffff;
+    --destaque: #1b1b1b;
+    --teclas: #87CEEB;
+    --text-destaque: #87CEEB;
+    --text-logo: #DAA520;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#container_usuario {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 10% 1fr 10% 2fr 10%;
+    grid-template-rows: auto 50% auto; 
+    gap: 10px;
+}
+
+#apresenta {
+    grid-area: 2/ 2/ 3/ 3;
+}
+
+h1 {
+    color: var(--text-logo);
+}
+
+h2 {
+    color: var(--text-destaque);
+    font-size: 30px;
+    font-style: italic;
+}
+
+#logo {
+    max-width: 90%;
+    height: auto;
+}
+
+
+#login {
+    grid-area: 2/ 4/ 3/ 5;
+    background-color: var(--destaque);
+    max-width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    padding:20px;
+    color: var(--text);
+    border: solid 3px var(--text-destaque);
+    box-shadow: 0px 0px 15px 0px var(--text-destaque);
+    
+}
+
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.container-acesso {
+    width: 95%;
+    height: 50px;
+    background-color: var(--fundo-principal);
+    border-radius: 15px;
+    border: solid 1px var(--text-destaque);
+    font-size: 30px;
+    padding:10px;
+}
+
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    font-style: italic;
+    background-color: var(--teclas);
+    color: var(--text);
+    border-radius: 10px;
+    border: solid 2px var(--teclas);
+    cursor: pointer;
+    margin-left: auto;
+    
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size:25px;
+    color: var(--text)
+}
+
+@media (max-width: 768px) {
+    #container_usuario {
+    grid-template-columns: 1f 1fr 1fr;
+    grid-template-rows: auto 30% 30% auto; 
+    gap: 20px;
+}
+    #apresenta {
+    grid-area: 2/ 2/ 3/ 3;
+    }
+
+    #login {
+    grid-area: 4/ 2/ 5/ 3;
+    max-width: 600px;
+}
+}

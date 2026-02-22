@@ -1,0 +1,204 @@
+:root {
+    --fundo-principal: rgb(194, 194, 194);
+    --text: #000000;
+    --detalhes: #0011ff;
+    --botoes: #87CEEB;
+    --destaque: #ffffff;
+    --containers: #dddddda8;
+    --fundo-sombra: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.secao {
+    display: none;
+}
+
+.secao.ativa {
+    display: block;
+}
+
+body {
+    background-color: var(--containers);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 100px;
+
+}
+
+
+#cabecalho_container {
+    width: 100%;
+    background-color: var(--destaque);
+    border-bottom: solid 0.8px var(--detalhes);
+    box-shadow: 0px 0.3px 5px 0.5px var(--detalhes);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+#logo {
+    width:40px;
+    background-size: cover;
+}
+
+header {
+    padding-left:30px;
+    padding-top: 15px;
+    display:flex;
+    flex-flow: row nowrap;
+    gap:10px;
+}
+
+
+.menu {
+    padding:10px;
+    list-style: none;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    
+}
+
+.menu {
+    display:flex;
+    flex-flow: row wrap;
+    gap:20px;
+    justify-content: flex-end;
+    cursor: pointer;
+   
+}
+
+.menu li {
+    color: var(--text);
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.menu li:hover {
+    border-bottom: solid 3px var(--detalhes);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+#processos, #cadastros, #temperaturas, #definicao_processo{
+    margin:10px;
+    width: 100%;
+}
+
+.tipo_peca{
+    color: var(--text);
+    font-size: 1rem;
+    padding-top:15px;
+}
+
+
+.container_formas{
+    padding-left: 30px;
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 174px);
+    justify-content: center;
+    gap:20px;
+}
+
+.container-geometria {
+    position: relative;
+    background-color: var(--destaque);
+    width: 174px;
+    height: 174px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px var(--fundo-sombra);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s
+}
+
+.container-liga {
+    position: relative;
+    width: 174px;
+    height: 174px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 1px var(--fundo-sombra);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s
+}
+
+.mb23 {
+    background-color: green;
+}
+
+.sae620 {
+    background-color: rgb(0, 195, 255);
+}
+
+.sae430b {
+    background-color: red;
+}
+
+.fortbar {
+    background-color: orange;
+}
+
+.latao {
+    background-color: yellow;
+}
+
+.definir_processo {
+    background-color: var(--fundo-principal);
+}
+
+.container-geometria:hover {
+    background-color: var(--fundo-principal);
+    border: solid 2px var(--detalhes);
+
+}
+
+.container-liga:hover {
+    background-color: var(--fundo-principal);
+    border: solid 2px var(--detalhes);
+}
+
+#imagem_geometria {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    z-index: 0;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+#imagem_geometria:hover {
+    opacity: 0.3;
+}
+
+.nome_geometria{
+    position:relative;
+    color: var(--text);
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    padding:10px;
+    z-index: 2;
+}
+
+@media (max-width: 595px) {
+    body {
+        padding-top: 140px;
+    }
+}
+
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos de Fundição [MERCOBRONZE]</title>
+    <link rel="stylesheet" href="/css/style-principal.css">
+    <link rel="script" href="/script/script.js">
+    <script src="https://kit.fontawesome.com/42c2468b85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="cabecalho_container">
+            <header>
+                <img src="/imagens/logo1.png" alt="Logo da empresa" id="logo">
+                <h1 class="cabecalho">MERCOBRONZE</h1>
+            </header>
+
+            <nav>
+                <ul class="menu">
+                    <li><a onclick="event.preventDefault(); mostrarSecao('processos')">Calculos <i class="fa-solid fa-calculator"></i></a></li>
+                    <li><a onclick="event.preventDefault(); mostrarSecao('cadastros')">Cadastros <i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+                    <li><a onclick="event.preventDefault(); mostrarSecao('temperaturas')">Temperaturas <i class="fa-solid fa-temperature-empty"></i></a></li>
+                    <li><a onclick="event.preventDefault(); mostrarSecao('definicao_processo')">Definições de processo <i class="fa-solid fa-gear"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="processos" class="secao ativa">
+            <section class="tipo_peca">
+                <h1>Geometria de Peças Fabricadas</h1>
+            </section>
+
+            <div class="container_formas">
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Chapa</h2>
+                    <img src="/imagens/chapa.png" alt="chapa" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Bucha</h2>
+                    <img src="/imagens/bucha.png" alt="bucha" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Tarugo</h2>
+                    <img src="/imagens/tarugo.png" alt="tarugo" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Bucha Flangeada</h2>
+                    <img src="/imagens/flangeada.png" alt="bucha flangeada" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Sextavado</h2>
+                    <img src="/imagens/sextavado.png" alt="tarugo sextavado" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Bucha Carretel</h2>
+                    <img src="/imagens/carretel.png" alt="Carretel de bronze" id="imagem_geometria">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="cadastros" class="secao">
+            <section class="tipo_peca">
+                <h1>Cadastros de Ferramentais</h1>
+            </section>
+
+            <div class="container_formas">
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Camisas</h2>
+                    <img src="/Imagens/camisa.png" alt="camisa" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Coquilhas</h2>
+                    <img src="/Imagens/coquilha.png" alt="coquilha" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Resfriador</h2>
+                    <img src="/imagens/barra.png" alt="barra" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Caixas de Moldagem</h2>
+                    <img src="/imagens/caixa.png" alt="caixa de moldagem" id="imagem_geometria">
+                </div>
+
+                <div class="container-geometria">
+                    <h2 class="nome_geometria">Luva Exotermica</h2>
+                    <img src="/imagens/luva.png" alt="Luva exotermica" id="imagem_geometria">
+                </div>
+            </div>
+        </section>
+
+        <section id="temperaturas" class="secao">
+            <section class="tipo_peca">
+                <h1>Temperaturas para cada liga</h1>
+            </section>
+
+            <div class="container_formas">
+                <div class="container-liga mb23">
+                    <h2 class="nome_geometria">Cobre-Chumbo</h2>
+                    
+                </div>
+
+                <div class="container-liga sae620">
+                    <h2 class="nome_geometria">Cobre-Estanho</h2>
+                    
+                </div>
+
+                <div class="container-liga sae430b">
+                    <h2 class="nome_geometria">Bronze-Manganês</h2>
+                    
+                </div>
+
+                <div class="container-liga fortbar">
+                    <h2 class="nome_geometria">Bronze-Aluminio</h2>
+                    
+                </div>
+
+                <div class="container-liga latao">
+                    <h2 class="nome_geometria">Latão</h2>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="definicao_processo" class="secao">
+            <section class="tipo_peca">
+                <h1>Definições de Processos</h1>
+            </section>
+
+            <div class="container_formas">
+                <div class="container-geometria definir_processo">
+                    <h2 class="nome_geometria"></h2>
+                    
+                </div>
+
+                <div class="container-geometria definir_processo">
+                    <h2 class="nome_geometria"></h2>
+                    
+                </div>
+
+                <div class="container-geometria definir_processo">
+                    <h2 class="nome_geometria"></h2>
+                    
+                </div>
+
+                <div class="container-geometria definir_processo">
+                    <h2 class="nome_geometria"></h2>
+                    
+                </div>
+
+                <div class="container-geometria definir_processo">
+                    <h2 class="nome_geometria"></h2>
+                    
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>
